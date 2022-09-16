@@ -38,7 +38,7 @@ If the additional contraint is set as $\sum_i\widehat{g_i}^{(itr)} = 4$, then th
 
 
 ### 3.SAMC for estimating the histogram of the marginal density of $x_2$
-I'm not sure if I'm doing this right, but it seems to me that the SAMC and CMC algorithm differs only in the number of samples $\mathbf{x}_k^{(t)}$ drawn in the sampling step (i.e., $M = 10$ or $1$) in estimating histogram of the marginal distribution. The figure below gives the true vs. estimated histogram, and the histogram of the $x_2$ samples obtained by SAMC.
+I'm not sure if I'm doing this right, but it seems to me that the SAMC and CMC algorithm differs only in the number of samples $\mathbf{x}_k^{(t)}$ $(k = 1,\dots, M)$ drawn in the sampling step (i.e., $M = 10$ or $1$) in estimating histogram of the marginal distribution. The figure below gives the true vs. estimated histogram, and the histogram of the $x_2$ samples obtained by SAMC.
 
 The estimated $\widehat{g_i}^{(t)}$ seems less proportional to the true histogram than those obtained from CMC as shown in (a), while histogram of the $x_2$ samples is still close to uniform as shown in (c). 
 
