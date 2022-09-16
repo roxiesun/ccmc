@@ -7,13 +7,15 @@ the parameters $\{\rho, \kappa, M,\gamma\}$, the random walk MH, and the lattice
 I tried running 6e5 iterations, but it seems that the wiggle issue still remains as shown in the Figure below.
 
 
-![ccmc6e5g245](https://github.com/roxiesun/ccmc/blob/main/images/ccmc6e5g245new.gif)
+<!--![ccmc6e5g245](https://github.com/roxiesun/ccmc/blob/main/images/ccmc6e5g245new.gif)-->
+<img src="/images/ccmc6e5g245new.gif" width="65%" height="65%"/>
+
 
 Similar results were obtained if the lattice size is increased to 489 (Figure below). 
 I'm not sure if this wiggling problem will always occur as the iteration goes up and the bandwidth gets increasingly small.
 
-![ccmc6e5g489](https://github.com/roxiesun/ccmc/blob/main/images/ccmc6e5g489new.gif)
-
+<!--![ccmc6e5g489](https://github.com/roxiesun/ccmc/blob/main/images/ccmc6e5g489new.gif)-->
+<img src="/images/ccmc6e5g489new.gif" width="65%" height="65%"/>
 
 Another notable problem is that, although the histogram of the $x_2$ samples seems close to uniform, samples near the boundaries were drawn with slightly higher frequency even if the desired sampling distribution $\mathbf{\pi}$ was set as uniform. 
 
@@ -24,15 +26,15 @@ I also tried the CMC algorithm to get a histogram estimate for the marginal dens
 It seems that  $\widehat{g_i}^{(itr)} \propto \int_{E_i}\psi(\mathbf{x})d\mathbf{x}$ holds when $itr$ gets large, and the histogram of $x_2$ samples are closed to uniform as shown in (c) below.
 
 
-![cmc1e6m244](https://github.com/roxiesun/ccmc/blob/main/images/cmc1e6m244.gif)
-
+<!--![cmc1e6m244](https://github.com/roxiesun/ccmc/blob/main/images/cmc1e6m244.gif)-->
+<img src="/images/cmc1e6m244.gif" width="50%" height="50%"/>
 
 
 If the additional contraint is set as $\sum_i\widehat{g_i}^{(itr)} = 4$, then the estimated histogram in (a) gets much closer to the truth at around 3e5 iterations but then gets biased in subregions around $x_2 = 25$ as shown in the Figure below. To be honest, how to set such a constraint still remains a question to me.
 
 
-![cmc1e6m244c4](https://github.com/roxiesun/ccmc/blob/main/images/cmc1e6m244c4.gif)
-
+<!--![cmc1e6m244c4](https://github.com/roxiesun/ccmc/blob/main/images/cmc1e6m244c4.gif)-->
+<img src="/images/cmc1e6m244c4.gif" width="50%" height="50%"/>
 
 
 ### 3.SAMC for estimating the histogram of the marginal density of $x_2$
@@ -41,4 +43,7 @@ I'm not sure if I'm doing this right, but it seems to me that the SAMC and CMC a
 The estimated $\widehat{g_i}^{(t)}$ seems less proportional to the true histogram than those obtained from CMC as shown in (a), but histogram of the $x_2$ samples is close to uniform as shown in (c). 
 
 
-![samc1e6m244](https://github.com/roxiesun/ccmc/blob/main/images/samc1e6m244.gif)
+<!--![samc1e6m244](https://github.com/roxiesun/ccmc/blob/main/images/samc1e6m244.gif)-->
+
+
+<img src="/images/samc1e6m244.gif" width="50%" height="50%"/>
