@@ -28,7 +28,7 @@ It seems that  $\widehat{g_i}^{(itr)} \propto \int_{E_i}\psi(\mathbf{x})d\mathbf
 
 
 
-If the additional contraint is set as $\sum_i\widehat{g_i}^{(itr)} = 4$, then the true and estimated histogram in (a) gets much closer:
+If the additional contraint is set as $\sum_i\widehat{g_i}^{(itr)} = 4$, then the estimated histogram in (a) gets much closer to the truth at around 3e5 iterations but then gets biased in subregions around $x_2 = 25$ as shown in the Figure below. To be honest, how to set such a constraint still remains a question to me.
 
 
 ![cmc1e6m244c4](https://github.com/roxiesun/ccmc/blob/main/images/cmc1e6m244c4.gif)
